@@ -63,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
                 }
                 Toast.makeText(getApplicationContext(),"Login Sukses",Toast.LENGTH_LONG).show();
                 startActivity(new Intent(getApplicationContext(),Home_Activity.class));
+
+                Daftar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        MainActivity.this.startActivity(new Intent(MainActivity.this.getApplicationContext(),Pendaftaran.class));
+                    }
+                });
             }
         });
 
